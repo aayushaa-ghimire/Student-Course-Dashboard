@@ -1,6 +1,7 @@
 import React from 'react'
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 import Courses from '../Pages/Courses'
+import '../Styles/CourseCard.css'
 function CourseCard({course}) {
   return (
     <>
@@ -13,7 +14,7 @@ function CourseCard({course}) {
             </ul>
 
             <Routes>
-                <Route path='/courses' Component={Courses}></Route>
+                <Route path='/courses' element={Courses}></Route>
             </Routes>
         </Router>
 

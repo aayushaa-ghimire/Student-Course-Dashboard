@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import CourseCard from '../Components/CourseCard';
+// import styles from 'C:/React/project7/Project7/src/Styles/Course.css'
 
 function Courses() {
   const[filter, setFilter] = useState(["All"]);
@@ -14,14 +15,26 @@ function Courses() {
   ?courses: 
   courses.filter(course=>course.level===filter)
 
+
+
+
+  const btnStyles = {
+    display: 'flex',
+    padding: '2vw',
+    gap: '2vw',
+    fontWeight: 'bold',
+    justifyContent: 'center',
+    fontSize: '1.3em'
+  }
+
   return (
     <>
     <div>
-        <h1>Courses:</h1>
-        <div>
-          <button onClick={()=>setFilter('All')}>All</button>
-          <button onClick={()=>setFilter('Intermediate')}>All</button>
-          <button onClick={()=>setFilter('Advanced')}>All</button>
+        <h1 style={{display: 'flex', justifyContent: 'center'}}>Courses:</h1>
+        <div style={btnStyles}>
+          <button onClick={()=>setFilter('All')} style={{padding: '1vw', fontWeight: 'bold', fontSize: '1.1em'}}>All</button>
+          <button onClick={()=>setFilter('Intermediate')} style={{padding: '1vw', fontWeight: 'bold', fontSize: '1.1em'}} >Intermediate</button>
+          <button onClick={()=>setFilter('Advanced')} style={{padding: '1vw', fontWeight: 'bold', fontSize: '1.1em'}}  >Advanced</button>
         </div>
 
         {filteredCourses.length === 0? 

@@ -1,0 +1,11 @@
+.navBar{
+    display: flex;
+    gap: 2vw;
+    /* background-color: black;
+    color: white; */
+}
+
+.navBar li{
+    list-style-type: none;
+    text-decoration: none;
+}
