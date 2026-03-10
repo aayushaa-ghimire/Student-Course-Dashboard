@@ -1,0 +1,14 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    background: rgba(0, 0, 0, 0.276);
+    padding: 2vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    font-size: 1.2em;
+}
+
+.Heading{
+    font-weight: bold;
+}

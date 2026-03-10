@@ -9,9 +9,11 @@ function NavBar() {
     <div>
         <ul>
             <nav style={{display: 'flex',
-                 gap: '3vw', 
+                 gap: '5vw', 
                  listStyleType: 'none', 
-                 fontSize: '2vw',
+                 fontSize: '2em',
+                 width: '100%',
+                 marginTop: '1vw'
               
                  }}>
                 <li ><Link className= "Nav"  to={"/"}>Home</Link></li>
