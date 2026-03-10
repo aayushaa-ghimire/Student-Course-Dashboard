@@ -1,5 +1,4 @@
-import React from 'react'
-import {BrowseRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Route, Router, Routes, Link} from 'react-router-dom';
 import Courses from '../Pages/Courses';
 import Home from '../Pages/Home';
 function NavBar() {
@@ -8,15 +7,15 @@ function NavBar() {
     <Router>
         <ul>
             <nav>
-                <li><Link to={"/"}>Home</Link></li>
-                <li><Link to={"/courses"}>Courses</Link></li>
+                <Link to={"/"}>Home</Link>
+                <Link to={"/courses"}>Courses</Link>
             </nav>
         </ul>
         <Routes>
             <Route path='/' Component={Home}></Route>
             <Route path='/courses' Component={Courses}></Route>
         </Routes>
-    </Router>
+    </Router> 
     </>
   );
 }

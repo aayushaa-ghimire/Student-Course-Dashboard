@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Route, Router, Routes, Link} from 'react-router-dom';
 import Courses from '../Pages/Courses';
 
 
@@ -12,7 +12,7 @@ function Home() {
           <ul>
             <li><Link to={'/courses'}></Link></li>
           </ul>
-          
+
           <Routes>
              <Route path='/courses' Component={Courses}></Route>
           </Routes>
