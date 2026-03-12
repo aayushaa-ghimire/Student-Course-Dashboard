@@ -1,5 +1,9 @@
 .Nav{
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 2vw;
+}
+
+.Nav:hover{
+    background-color: rgba(255, 255, 255, 0.379);
 }

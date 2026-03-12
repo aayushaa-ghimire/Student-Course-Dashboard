@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom';
-import Courses from '../Pages/Courses';
-import Home from '../Pages/Home';
+// import Courses from '../Pages/Courses';
+// import Home from '../Pages/Home';
 import '../Styles/nav.css'
 // import styles from 'C:/React/project7/Project7/src/Styles/Navbar.module.css'
 function NavBar() {
@@ -13,7 +13,9 @@ function NavBar() {
                  listStyleType: 'none', 
                  fontSize: '2em',
                  width: '100%',
-                 marginTop: '1vw'
+                 marginTop: '1vw',
+                 backgroundColor: 'black',
+                 color: 'white'
               
                  }}>
                 <li ><Link className= "Nav"  to={"/"}>Home</Link></li>
